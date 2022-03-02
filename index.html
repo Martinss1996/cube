@@ -10,7 +10,6 @@
       width: 300px;
       height: 300px;
       margin: 3em auto auto auto;
-      border: 2px solid;
       position: relative;
       perspective-origin: center -50%;
       perspective: 500px;
@@ -23,13 +22,39 @@
       position: absolute;
       transform-style: preserve-3d;
       transform: translateZ(-150px);
+      transform: rotateY(60deg);
     }
 
     .face {
       position: absolute;
       width: 300px;
       height: 300px;
-      background-color: aquamarine;
+      background-color: rgba(150, 255, 0, .1);
+      background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ee/Dirt_(texture)_JE1_BE1.png');
+    }
+
+    .c1 {
+      transform: translateZ(150px);
+    }
+
+    .c2 {
+      transform: rotateY(180deg) translateZ(150px);
+    }
+
+    .c3 {
+      transform: rotateY(-90deg) translateZ(150px);
+    }
+
+    .c4 {
+      transform: rotateY(90deg) translateZ(150px);
+    }
+
+    .c5 {
+      transform: rotateX(90deg) translateZ(150px);
+    }
+
+    .c6 {
+      transform: rotateX(-90deg) translateZ(150px);
     }
   </style>
 </head>
